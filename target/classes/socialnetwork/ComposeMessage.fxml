@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="AnchorPaneCompose" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #484848;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="socialnetwork.ComposeMessageController">
+   <children>
+      <Rectangle arcHeight="40.0" arcWidth="40.0" fill="#cdcdcd" height="83.0" layoutX="189.0" layoutY="495.0" stroke="TRANSPARENT" strokeType="INSIDE" width="512.0" />
+      <Rectangle arcHeight="40.0" arcWidth="40.0" fill="LIGHTGRAY" height="55.0" layoutX="222.0" layoutY="13.0" stroke="LIGHTGRAY" width="383.0" />
+      <ImageView fx:id="SearchImage" fitHeight="40.0" fitWidth="40.0" layoutX="548.0" layoutY="21.0" onMouseClicked="#OnSearchImageClick" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../ICON/Loup.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="UserSearchField" layoutX="239.0" layoutY="19.0" onMouseClicked="#OnUserSearchFieldClicked" prefHeight="49.0" prefWidth="307.0" style="-fx-background-color: #d3d3d3;">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </TextField>
+      <TableView fx:id="user_table" layoutX="235.0" layoutY="74.0" prefHeight="350.0" prefWidth="357.0" style="-fx-background-color: #ebebeb;">
+         <columns>
+            <TableColumn fx:id="NameColumn" prefWidth="180.0" style="-fx-background-color: #ebebeb;" text="Name" />
+            <TableColumn fx:id="SurnameColumn" prefWidth="186.0" style="-fx-background-color: #ebebeb;" text="Surname" />
+         </columns>
+      </TableView>
+      <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#ebebeb" height="40.0" layoutX="705.0" layoutY="21.0" stroke="BLACK" strokeType="INSIDE" width="84.0" />
+      <Text fx:id="BackText" layoutX="708.0" layoutY="46.0" onMouseClicked="#OnBack2menuClicked" strokeType="OUTSIDE" strokeWidth="0.0" text="Back 2 menu" textAlignment="CENTER" wrappingWidth="84.0" />
+      <TextArea fx:id="UserListArea" editable="false" layoutX="14.0" layoutY="75.0" prefHeight="350.0" prefWidth="148.0" />
+      <ImageView fx:id="SendMsgIcon" fitHeight="45.0" fitWidth="61.0" layoutX="638.0" layoutY="517.0" onMouseClicked="#OnSendMsgIconClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../ICON/sendmsg.jpg" />
+         </image>
+      </ImageView>
+      <TextArea fx:id="InsertTextField" layoutX="205.0" layoutY="517.0" prefHeight="45.0" prefWidth="417.0" style="-fx-background-color: #cdcdcd;" />
+      <Rectangle arcHeight="40.0" arcWidth="40.0" fill="#e4e4e4" height="45.0" layoutX="11.0" layoutY="28.0" stroke="TRANSPARENT" strokeType="INSIDE" width="156.0" />
+      <Text layoutX="23.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="List of receivers" wrappingWidth="138.0">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

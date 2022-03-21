@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="240.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="socialnetwork.DrawNotifController">
+   <content>
+      <TextArea fx:id="TextAreaNotif" prefHeight="477.0" prefWidth="236.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextArea>
+   </content>
+</ScrollPane>

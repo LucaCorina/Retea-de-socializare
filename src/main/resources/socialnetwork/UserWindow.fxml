@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="AnchorPaneUser" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #484848;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="socialnetwork.UserWindowController">
+   <children>
+      <Rectangle arcHeight="40.0" arcWidth="40.0" fill="#cdcdcd" height="443.0" layoutX="43.0" layoutY="135.0" stroke="TRANSPARENT" strokeType="INSIDE" width="714.0" />
+      <Rectangle arcHeight="40.0" arcWidth="40.0" fill="LIGHTGRAY" height="55.0" layoutX="218.0" layoutY="25.0" stroke="LIGHTGRAY" width="383.0" />
+      <ImageView fx:id="SearchImage" fitHeight="40.0" fitWidth="40.0" layoutX="544.0" layoutY="33.0" onMouseClicked="#OnSearchImageClick" pickOnBounds="true" preserveRatio="true">
+         <Image url="@../ICON/Loup.png" />
+      </ImageView>
+      <TextField fx:id="UserSearchField" layoutX="235.0" layoutY="31.0" onMouseClicked="#OnUserSearchFieldClicked" prefHeight="49.0" prefWidth="307.0" style="-fx-background-color: #d3d3d3;">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </TextField>
+      <Circle fill="#ebebeb" layoutX="400.0" layoutY="205.0" radius="61.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#ebebeb" height="56.0" layoutX="300.0" layoutY="279.0" stroke="TRANSPARENT" strokeType="INSIDE" width="200.0" />
+      <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#ebebeb" height="81.0" layoutX="118.0" layoutY="450.0" stroke="TRANSPARENT" strokeType="INSIDE" width="250.0" />
+      <Text fx:id="FriendStatusCommand" fill="#616161" layoutX="118.0" layoutY="508.0" onMouseClicked="#OnFriendStatusCommandClicked" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="250.0">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="SendMessage" fitHeight="93.0" fitWidth="135.0" layoutX="525.0" layoutY="444.0" onMouseClicked="#OnSendMessageToUserClicked" pickOnBounds="true" preserveRatio="true">
+         <Image url="@../ICON/sendmsg.jpg" />
+      </ImageView>
+      <TextField fx:id="NameField" alignment="CENTER" editable="false" layoutX="274.0" layoutY="337.0" prefHeight="40.0" prefWidth="240.0" style="-fx-background-color: #cdcdcd;">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </TextField>
+      <TableView fx:id="user_table" layoutX="231.0" layoutY="86.0" prefHeight="350.0" prefWidth="357.0" style="-fx-background-color: #ebebeb;">
+         <columns>
+            <TableColumn fx:id="NameColumn" prefWidth="180.0" style="-fx-background-color: #ebebeb;" text="Name" />
+            <TableColumn fx:id="SurnameColumn" prefWidth="186.0" style="-fx-background-color: #ebebeb;" text="Surname" />
+         </columns>
+      </TableView>
+      <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#ebebeb" height="40.0" layoutX="716.0" layoutY="25.0" stroke="BLACK" strokeType="INSIDE" width="84.0" />
+      <Text fx:id="BackText" layoutX="719.0" layoutY="50.0" onMouseClicked="#OnBack2menuClicked" strokeType="OUTSIDE" strokeWidth="0.0" text="Back 2 menu" textAlignment="CENTER" wrappingWidth="84.0" />
+      <Button fx:id="AcceptButton" layoutX="162.0" layoutY="537.0" mnemonicParsing="false" onMouseClicked="#OnAcceptButtonClicked" style="-fx-background-color: #484848;" text="Accept" textFill="WHITE" visible="false" />
+      <Button fx:id="DeclineButton" layoutX="262.0" layoutY="537.0" mnemonicParsing="false" onMouseClicked="#OnDeclineButtonClick" style="-fx-background-color: #484848;" text="Decline" textFill="WHITE" visible="false" />
+   </children>
+</AnchorPane>

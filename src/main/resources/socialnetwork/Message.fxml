@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane fx:id="AnchorPaneMessage" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #484848;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="socialnetwork.MessageController">
+   <children>
+      <Rectangle arcHeight="40.0" arcWidth="40.0" fill="#cdcdcd" height="459.0" layoutX="54.0" layoutY="87.0" stroke="TRANSPARENT" strokeType="INSIDE" width="696.0" />
+      <Rectangle arcHeight="40.0" arcWidth="40.0" fill="#e8e8e8" height="59.0" layoutX="177.0" layoutY="464.0" stroke="TRANSPARENT" strokeType="INSIDE" width="443.0" />
+      <TextArea fx:id="MessageArea" editable="false" layoutX="77.0" layoutY="108.0" prefHeight="341.0" prefWidth="651.0" />
+      <ImageView fx:id="SendMsgIcon" fitHeight="45.0" fitWidth="61.0" layoutX="623.0" layoutY="472.0" onMouseClicked="#OnSendMsgIconClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../ICON/sendmsg.jpg" />
+         </image>
+      </ImageView>
+      <TextArea fx:id="InsertTextField" layoutX="190.0" layoutY="472.0" prefHeight="45.0" prefWidth="417.0" style="-fx-background-color: #cdcdcd;" />
+      <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#ebebeb" height="40.0" layoutX="709.0" layoutY="29.0" stroke="BLACK" strokeType="INSIDE" width="84.0" />
+      <Text fx:id="BackText" layoutX="711.0" layoutY="53.0" onMouseClicked="#OnBack2menuClicked" strokeType="OUTSIDE" strokeWidth="0.0" text="Back 2 menu" textAlignment="CENTER" wrappingWidth="84.0" />
+   </children>
+</AnchorPane>

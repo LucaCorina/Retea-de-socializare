@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AnchorPaneMenu" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #484848;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="socialnetwork.MeniuController">
+   <Rectangle arcHeight="40.0" arcWidth="40.0" fill="LIGHTGRAY" height="55.0" layoutX="208.0" layoutY="15.0" stroke="LIGHTGRAY" width="383.0" />
+   <ImageView fx:id="NotifImage" fitHeight="70.0" fitWidth="70.0" layoutX="616.0" layoutY="9.0" onMouseClicked="#OnNotifImageClicked" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../ICON/bell.png" />
+   </ImageView>
+   <ImageView fx:id="LogImage" fitHeight="70.0" fitWidth="70.0" layoutX="91.0" layoutY="9.0" onMouseClicked="#OnLogImageClicked" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../ICON/dungi.png" />
+   </ImageView>
+   <ImageView fx:id="MsgImage" fitHeight="70.0" fitWidth="70.0" layoutX="698.0" layoutY="9.0" onMouseClicked="#OnMsgImageClick" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../ICON/msg.png" />
+   </ImageView>
+   <ImageView fx:id="SearchImage" fitHeight="40.0" fitWidth="40.0" layoutX="534.0" layoutY="23.0" onMouseClicked="#OnSearchImageClick" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../ICON/Loup.png" />
+   </ImageView>
+   <TextField fx:id="UserSearchField" layoutX="221.0" layoutY="17.0" onMouseClicked="#OnUserSearchFieldClicked" prefHeight="40.0" prefWidth="307.0" style="-fx-background-color: #d3d3d3;">
+      <font>
+         <Font size="23.0" />
+      </font>
+   </TextField>
+   <JFXDrawer fx:id="DrawerMsg" defaultDrawerSize="250.0" direction="RIGHT" layoutX="540.0" layoutY="95.0" prefHeight="480.0" prefWidth="240.0" />
+   <JFXDrawer fx:id="DrawerLog" defaultDrawerSize="250.0" layoutX="21.0" layoutY="95.0" prefHeight="480.0" prefWidth="240.0" />
+   <TableView fx:id="user_table" layoutX="221.0" layoutY="76.0" prefHeight="366.0" prefWidth="357.0" style="-fx-background-color: #ebebeb;">
+     <columns>
+       <TableColumn fx:id="NameColumn" prefWidth="180.0" style="-fx-background-color: #ebebeb;" text="Name" />
+       <TableColumn fx:id="SurnameColumn" prefWidth="186.0" style="-fx-background-color: #ebebeb;" text="Surname" />
+     </columns>
+   </TableView>
+   <Button fx:id="LogoutButton" layoutX="349.0" layoutY="535.0" mnemonicParsing="false" onMouseClicked="#OnLogOutButtonClicked" prefHeight="40.0" prefWidth="102.0" text="Logout">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Button>
+</AnchorPane>
